@@ -4,38 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="ayuda.css">
-    <link rel="stylesheet" href="carousel.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="ayuda.js"></script>
-    <script src="https://kit.fontawesome.com/41b33b241e.js" crossorigin="anonymous"></script>
-    <script src="funciones_generales.js"></script>
-
+    <title>Centro de Ayuda</title>
+    <link rel="stylesheet" href="CSS/centro_de_ayuda.css">
+    <?php include("HTML/global_dependencies.html");?>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-gradient">
-        <div class="container-fluid">
-            <a href="" class="navbar-brand">Practica UNAJ</a>
-            <button class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#toggleMobileMenu" 
-                aria-controls="togggleMobileMenu" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav me-auto">
-                    <li><a href="paginaUNAJ.html" class="nav-link " aria-current="true">Principal</a></li>
-                    <li><a href="#" class="nav-link active">Centro de Ayuda</a></li>
-                </ul>  
-            </div>
-        </div>
-    </nav>
-    <div data-include="prueba.html"></div>
+    <?php include("HTML/navbar.html");?>
     <header>
         <div class="d-flex justify-content-center py-2">
             <p class="display-4">Centro de Ayuda</p>
@@ -79,9 +53,6 @@
             </div>
         </section>
     </main>
-    <div data-import="footer.html"></div>
-    <script src="bootstrap.bundle.js"></script>
-    <script src="funciones_generales.js"></script>
-
-</body>
+    <?php include("HTML/footer.html");?>
+ </body>
 </html>
