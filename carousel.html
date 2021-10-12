@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+<style>
+    .carousel_contenedor {
+    position: relative;
+}
+
+.carousel_lista {
+    overflow: hidden;
+}
+
+.carousel_anterior, .carousel_siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: black;
+    z-index: 100;
+}
+
+.carousel_anterior  {
+    left: -30px;
+}
+
+.carousel_siguiente  {
+    right: -30px;
+}
+
+.carousel_elemento > img {
+    max-height: 400px;
+    width: 800px;
+}
+</style>
+
+
+<div class="carousel">
+    <div class="carousel_contenedor">
+        <button aria-label="Anterior" class="carousel_anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="carousel_lista">
+            <div class="carousel_elemento"><img src="imagen-1.jpg" alt=""></div>
+            <div class="carousel_elemento"><img src="imagen-2.jpg" alt=""></div>
+            <div class="carousel_elemento"><img src="imagen-3.jpeg" alt=""></div>
+        </div>
+       
+        <button aria-label="Siguiente" class="carousel_siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+    <div role="tablist" class="carousel_indicadores">
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+<script>
+window.addEventListener('load', function(){
+    new Glider(document.querySelector(".carousel_lista"), {
+        slidesToShow: 1,
+        dots: '.carousel_indicadores',
+        draggable: false,
+        arrows: {
+          prev: document.querySelector('.carousel_anterior'),
+          next: document.querySelector('.carousel_siguiente')
+        }
+    });
+});
+</script>
