@@ -12,9 +12,21 @@
         </button>
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
             <ul class="navbar-nav me-auto">
-                <li><a href="index.php" class="nav-link active" aria-current="true">Principal</a></li>
+                <li><a href="index.php" class="nav-link">Principal</a></li>
                 <li><a href="ayuda.php" class="nav-link">Centro de Ayuda</a></li>
             </ul>  
         </div>
     </div>
 </nav>
+
+<script>
+    let filename = window.location.pathname.split("/").pop();
+    filename = filename === "" ? "index.php" : filename;
+    $(".navbar-nav .nav-link").each(function () {
+        if($(this).attr('href') == filename)
+        {
+            $(this).addClass("active");
+            $(this).attr("aria-current", "true");
+        }
+    });
+</script>
