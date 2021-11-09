@@ -16,7 +16,4 @@ $(document).ready(() => {
             }
         });
     });
-
-    $("#copyright-text").text("Copyright " + new Date().getFullYear());
-
 });

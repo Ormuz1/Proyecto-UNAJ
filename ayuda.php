@@ -7,6 +7,7 @@
     <title>Centro de Ayuda</title>
     <link rel="stylesheet" href="CSS/centro_de_ayuda.css">
     <?php include("HTML/global_dependencies.html");?>
+    <script src="JS/ayuda.js"> </script>
 </head>
 <body>
     <?php include("HTML/navbar.html");?>
