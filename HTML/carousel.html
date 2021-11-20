@@ -1,40 +1,51 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 <style>
     .carousel_contenedor {
-    position: relative;
-}
-
-.carousel_lista {
-    overflow: hidden;
-}
-
-.carousel_anterior, .carousel_siguiente {
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 35px);
-    cursor: pointer;
-    line-height: 30px;
-    text-align: center;
-    background: none;
-    color: black;
-    z-index: 100;
-}
-
-.carousel_anterior  {
-    left: -30px;
-}
-
-.carousel_siguiente  {
-    right: -30px;
-}
-
-.carousel_elemento > img {
-    max-height: 400px;
-    width: 800px;
-}
+        position: relative;
+    }
+    
+    .carousel_lista {
+        overflow: hidden;
+    }
+    
+    .carousel_anterior,
+    .carousel_siguiente {
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: none;
+        top: calc(50% - 35px);
+        cursor: pointer;
+        line-height: 30px;
+        text-align: center;
+        background: none;
+        color: black;
+        z-index: 100;
+    }
+    
+    .carousel_anterior {
+        left: -30px;
+    }
+    
+    .carousel_siguiente {
+        right: -30px;
+    }
+    
+    .carousel_elemento>img {
+        max-height: 400px;
+        width: 800px;
+    }
+    
+    .carousel_elemento p {
+        padding: 0 1rem;
+    }
+    
+    .carousel_texto {
+        margin: 0;
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
 </style>
 
 
@@ -45,14 +56,72 @@
         </button>
 
         <div class="carousel_lista">
-            <div class="carousel_elemento"><img src="Imagenes/imagen-1.jpg" alt=""></div>
-            <div class="carousel_elemento"><img src="Imagenes/imagen-2.jpg" alt=""></div>
-            <div class="carousel_elemento"><img src="Imagenes/imagen-3.jpeg" alt=""></div>
+            <div class="carousel_elemento">
+                <img src="Imagenes/cigarrillo_tumba.jpg" alt="">
+                <p class="carousel_texto">
+                    <p class="text-center mt-2 fw-bold fs-4">Las estadisticas del cigarrillo</p>
+                    <p class="fs-5 text-center">
+                        Cada año, más de 8 millones de personas mueren en el mundo a causa del tabaco. En la Argentina, el 13% de las defunciones anuales se da por enfermedades relacionadas a su consumo, lo que representa aproximadamente 44.000 personas.
+                    </p>
+                </p>
+            </div>
+            <div class="carousel_elemento">
+                <img src="Imagenes/cigarrillo_roto.jpg" alt="">
+                <p class="carousel_texto">
+                    <p class="text-center mt-2 fw-bold fs-4">¿Cómo afecta el cigarrillo a tu salud? </p>
+                    <p class="fs-5 text-center">
+                        El humo del tabaco afecta particularmente a los pulmones, que es por donde ingresa el humo, produciendo una reacción irritante en las vías respiratorias, disminución de la capacidad pulmonar, aumento de las secreciones en la tráquea y los bronquios, lo
+                        que lleva a tos crónica y expectoración habitual, sobre todo, por las mañanas. El aumento de las secreciones se asocia con mayor riesgo de sobre infecciones por virus y bacterias asociado con bronquitis crónica.
+                    </p>
+                </p>
+            </div>
+            <div class="carousel_elemento">
+                <img src="Imagenes/imagen-3.jpeg" alt="">
+                <p class="carousel_texto">
+                    <p class="text-center mt-2 fw-bold fs-4">¿Cómo afecta esto a los demás?</p>
+                    <p class="fs-5 text-center">
+                        Se enferman más a menudo. Padecen más infecciones respiratorias (como bronquitis y neumonía) Son más propensos a presentar tos, sibilancias y dificultad para respirar. Padecen más infecciones de oído.
+                    </p>
+                </p>
+            </div>
+            <div class="carousel_elemento">
+                <img src="Imagenes/fuerza.jpg" alt="">
+                <p class="carousel_texto">
+                    <p class="text-center mt-2 fw-bold fs-4">La fuerza para dejar de fumar</p>
+                    <p class="fs-5 text-center">
+                        Para dejar de fumar lo que hace falta son ganas, fuerza de voluntad. Si uno quiere y se lo propone lo consigue. Para dejar de fumar es muy importante querer y tener fuerza de voluntad, pero con esto no es suficiente. Hay mucha gente que lo intenta con
+                        mucha ganas y poniendo todo lo que puede de su parte. Para dejarlo es imprescindible además un método específico para cada tipo de fumador y la ayuda de un profesional de la salud.
+                    </p>
+                </p>
+            </div>
+            <div class="carousel_elemento">
+                <img src="Imagenes/esperanza.jpg" alt="">
+                <p class="carousel_texto">
+                    <p class="text-center mt-2 fw-bold fs-4">Creer en la posibilidad de mejora</p>
+                    <p class="fs-5 text-center">
+                        "Yo no puedo. Lo he intentado muchas veces y siempre termino por volver." El haber conseguido dejar de fumar durante un tiempo es uno de los datos que más correlaciona con el éxito definitivo. Estas personas pueden conseguirlo. Lo que les falta es método
+                        y planificación, haciendo especial hincapié en la prevención de las recaídas. Les han faltado estrategias para identificar las situaciones de riesgo y saber cómo evitarlas.
+                    </p>
+                </p>
+            </div>
+            <div class="carousel_elemento">
+                <img src="Imagenes/perseverancia.jpg" alt="">
+                <p class="carousel_texto">
+                    <p class="text-center mt-2 fw-bold fs-4">Sin excusas</p>
+                    <p class="fs-5 text-center">
+                        "Yo, es que necesito fumar sino no me puedo concentrar." Estás equivocado. Nadie necesita la nicotina. Si bien es cierto que el monóxido de carbono que se genera en la combustión del tabaco y también en gran parte el hábito, facilitan la concentración.
+                        Puedes recuperar tu atención, y mucha salud, a los pocos días de abandonar el tabaco.
+                    </p>
+                </p>
+            </div>
         </div>
-       
+
         <button aria-label="Siguiente" class="carousel_siguiente">
             <i class="fas fa-chevron-right"></i>
         </button>
+    </div>
+    <div id="texto_carousel">
+
     </div>
     <div role="tablist" class="carousel_indicadores">
 
@@ -61,15 +130,16 @@
 
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 <script>
-window.addEventListener('load', function(){
-    new Glider(document.querySelector(".carousel_lista"), {
-        slidesToShow: 1,
-        dots: '.carousel_indicadores',
-        draggable: false,
-        arrows: {
-          prev: document.querySelector('.carousel_anterior'),
-          next: document.querySelector('.carousel_siguiente')
-        }
+    window.addEventListener('load', function() {
+        const glider = new Glider(document.querySelector(".carousel_lista"), {
+            slidesToShow: 1,
+            dots: '.carousel_indicadores',
+            draggable: false,
+            arrows: {
+                prev: document.querySelector('.carousel_anterior'),
+                next: document.querySelector('.carousel_siguiente')
+            }
+        });
+        console.log(glider)
     });
-});
 </script>
